@@ -1,0 +1,205 @@
+@import 'https://codepen.io/njmcode/pen/dca1ecadd3b4d843014b4521e1817b40.css';
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  min-width: 660px;
+  max-width: 660px;
+  margin-left: auto;
+}
+
+.cg-visualizer,
+.cg-sequencer {
+  width: 100%;
+}
+.cg-visualizer legend,
+.cg-sequencer legend {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.cg-visualizer {
+  border: none;
+  padding: 0 !important;
+}
+.cg-visualizer legend {
+  font-size: 36px !important;
+  color: #000;
+}
+
+.cg-sequencer {
+  margin: 20px 0 50px;
+}
+.cg-sequencer legend {
+  font-size: 22px !important;
+  color: #000;
+}
+
+.nidclink {
+  background: black;
+  padding: 5px;
+  font-family: monospace;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.nidclink a {
+  color: #13ba88;
+}
+
+body {
+  background: url(https://raw.githubusercontent.com/EvaLantsova/blue-web-synth/main/public/bg.png) no-repeat;
+  background-size: cover;
+}
+
+div.row:last-child {
+  margin-bottom: 0;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section {
+  margin-bottom: 1em;
+}
+section h4 {
+  margin-bottom: 0.5em;
+}
+section:before, section:after {
+  display: none;
+}
+
+.sublabel {
+  font-size: 0.7em !important;
+  margin-bottom: 0.3em;
+}
+
+fieldset {
+  border: 1px solid;
+  margin-bottom: 0;
+  padding: 0.4em !important;
+  border-color: #000 !important;
+  flex-direction: column !important;
+}
+fieldset legend {
+  background-color: #3254B2;
+  font-size: 22px !important;
+  padding: 0 13px;
+}
+
+.generic-slider {
+  margin-bottom: 0.3em !important;
+}
+.generic-slider:last-child {
+  margin-bottom: 0 !important;
+}
+
+button.action-button {
+  font-size: 22px !important;
+  text-transform: uppercase;
+  border-width: 1px !important;
+  border-color: #000 !important;
+  border-radius: 5px !important;
+  cursor: pointer;
+  color: #000 !important;
+  min-height: 37px !important;
+  max-height: 37px !important;
+  min-width: 101px !important;
+  max-width: 185px !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 0 20px !important;
+}
+button.action-button:hover {
+  background-image: none !important;
+}
+button.action-button:last-child {
+  margin-right: 0;
+}
+button.action-button.active {
+  -webkit-animation: flash 0.3s infinite;
+          animation: flash 0.3s infinite;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    background-image: inherit;
+  }
+  100% {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.5), transparent, rgba(0, 0, 0, 0.4)) !important;
+  }
+}
+
+@keyframes flash {
+  0% {
+    background-image: inherit;
+  }
+  100% {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.5), transparent, rgba(0, 0, 0, 0.4)) !important;
+  }
+}
+.sequencer-controls {
+  width: 100%;
+}
+
+.visualizer {
+  background: #200 radial-gradient(transparent, #100);
+  box-shadow: inset 0 0 6px 0 rgba(255, 0, 0, 0.4);
+}
+
+.slide-basic section {
+  background: none;
+  padding: 0;
+  padding-right: 0;
+  border: none;
+  padding-left: 0;
+  box-shadow: none;
+}
+
+.cg-adsr,
+.w-col {
+  width: 33%;
+}
+
+.w-col {
+  height: 221px;
+}
+
+.col-sequencer-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 40px;
+}
+
+#demo fieldset legend:before {
+  content: none !important;
+  background-color: transparent !important;
+}
+
+#demo input[type=range] {
+  border: none;
+  background-color: #fff;
+  box-shadow: none;
+  height: 4px;
+  margin-bottom: 5px;
+}
+
+#demo input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  width: 2em;
+  height: 1em;
+  border: none;
+  border-radius: 50px;
+}
+
+#demo fieldset label {
+  padding: 0 5px 10px;
+}
