@@ -1,0 +1,51 @@
+body {
+  font-family: "pirata", sans-serif;
+  margin: 0;
+
+  @media (min-width: 600px) {
+    margin: var(--grid-gap);
+  }
+}
+
+@font-face {
+  font-family: "pirata";
+  src: url("/PirataOne.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --yellow: #f3ff6b;
+  --green: #6bff83;
+  --blue: #6bd5ff;
+  --red: #ff3333;
+  --white: #eee;
+  --inactive: #ff6d72;
+
+  --focus-box-shadow: 0 0 0 4px #6bd5ff;
+  --font: "pirata", sans-serif;
+  --font-size-input: 24px;
+  --stroke-width: 8;
+  --grid-gap: 18px;
+  --button-size: 40px;
+  --encoder-size: 88px;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background-color: #e4d4f9;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
